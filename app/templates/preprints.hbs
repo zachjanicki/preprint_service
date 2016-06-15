@@ -1,92 +1,64 @@
 {{nav-bar}}
-<br>
-<br>
-<style>
-#mfr {
-    padding: 40px;
-    padding-top: 30px;
-
-}
-#header {
-    padding: 20px;
-    margin-left: 12px;
-}
-hr {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    border-style: inset;
-    border-width: 1px;
-}
-#view_project {
-    margin-right: 20px;
-}
-
-#right_panel {
-    margin-right: 20px;
-}
-
-    .osf-box{
-        border:0px;
-    }
-</style>
 
 <body>
 
+<!--HEADER-->
 <div class="container"><!--CONATINER DIV-->
-    <div class="row">
-        <div class="m-b-md p-md osf-box">
-            <div class="row" id="header">
+    <div class="row"> <!--ROW DIV-->
+        <div class="m-b-md p-md osf-box"> <!--OSF BOX-->
+            <div class="row" id="header"> <!--HEADER ROW-->
                 <h1>{{model.title}}</h1>
                 <h5>{{model.authors}}</h5>
                 <h5>Added on {{model.dateCreated}}</h5>
-            </div>
-            <hr color="#C7FFC7">
-            <div class="row">
-                <div id="mfr" class="col-md-7">
+            </div> <!--END HEADER ROW-->
+            <hr>
+
+            <div class="row"> <!--MFR ROW-->
+                <div id="mfr" class="col-md-7"> <!--IFRAME 7 COL-->
                     <iframe src={{model.link}} display="block" width=600 height=700></iframe>
-                </div>
-                <div class="col-md-5">
+                </div> <!--END IFRAME-->
+                <div class="col-md-5"> <!--METADATA 5 COL-->
                     <br>
-                    <div class="row m-b-md p-md osf-box-lt" id="view_project">
-                        <div class="col-md-8">
+                    <div class="row m-b-md p-md osf-box-lt" id="view_project"> <!--2ND OSF BOX-->
+                        <div class="col-md-8"> <!--COL 8-->
                             <p>The project for this paper is available on the Open Science Framework</p>
-                        </div>
-                        <div class="col-md-4">
+                        </div> <!--END COL 8-->
+                        <div class="col-md-4"> <!--VIEW PROJECT BUTTON-->
                             <button type="button" class="btn btn-primary" onclick="window.location.href={{model.link}}">View Project</button>
-                        </div>
-                    </div>
+                        </div> <!--END VIEW PROJECT BUTTON-->
+                    </div> <!--END 2ND OSF BOX-->
                     <br>
                     <br>
-                    <div class="row" id="right_panel">
-                        <div class="col-md-12">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
+                    <div class="row" id="right_panel"> <!--RIGHT PANEL ROW 1-->
+                        <div class="col-md-12"> <!--12 COL-->
+                            <div class="panel panel-default"> <!--DEFAULT PANEL-->
+                                <div class="panel-heading"> <!--PANEL HEADING (ABSTRACT)-->
                                     Absract:
-                                </div>
-                                <div class="panel-body">
+                                </div> <!--END PANEL HEADING (ABSTRACT)-->
+                                <div class="panel-body"> <!--PANEL BODY-->
                                     {{model.abstract}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" id="right_panel">
-                        <div class="col-md-12">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
+                                </div>  <!--END PANEL BODY-->
+                            </div> <!--END DEFAULT PANEL-->
+                        </div> <!--END 12 COL-->
+                    </div> <!--END RIGHT PANEL ROW-->
+
+                    <div class="row" id="right_panel"> <!--RIGHT PANEL ROW 2-->
+                        <div class="col-md-12"> <!--COL 12-->
+                            <div class="panel panel-default"> <!--PANEL DEFAULT 2-->
+                                <div class="panel-heading"> <!--PANEL HEADING (CITATION)-->
                                     Citation
-                                </div>
-                                <div class="panel-body">
+                                </div> <!--END PANEL HEADING (CITATION)-->
+                                <div class="panel-body"> <!--CITATION TEXT-->
                                     <strong>APA</strong><br>
                                     Cummings, J. N., Butler, B., & Kraut, R. (2002). The quality of online social
                                     relationships. Communications of the ACM, 45(7), 103-108.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                                </div> <!--END CITATION TEXT-->
+                            </div> <!--END PANEL DEFAULT 2-->
+                        </div> <!--END COL 12-->
+                    </div> <!--END RIGHT PANEL ROW 2-->
+                </div> <!--END METADATA-->
+            </div>  <!--END MFR ROW-->
+        </div> <!--END OSF BOX-->
     </div> <!--END ROW-->
     </div><!--END DIV CONTAINER-->
 </body>
