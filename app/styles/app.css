@@ -43,6 +43,7 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--theme-color-light), endColorstr='#000000', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
     color: #fff;
+    padding-top: 80px;
     position: relative;
 }
 
@@ -416,4 +417,85 @@ h5 {
 
 #browse .read-more-toggle-custom:visited {
     color: #337ab7;
+}
+
+#browse .read-more-toggle-custom {
+    color: #337ab7:
+}
+
+#browse .read-more-toggle-custom:hover {
+    color: #337ab7;
+}
+
+#browse .read-more-toggle-custom:visited {
+    color: #337ab7;
+}
+
+/*FOR FORMS ON THE PREPRINTS AND ADD-PREPRINTS PAGE*/
+.text-muted {
+    color: #777;
+}
+
+#mfr {
+    padding: 40px;
+    padding-top: 30px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-style: inset;
+    border-width: 1px;
+    color:#C7FFC7;
+}
+#view_project {
+    margin-right: 20px;
+}
+
+#right_panel {
+    margin-right: 20px;
+}
+
+.osf-box{
+    border:0px;
+}
+
+#dropzone{
+    width:700px;
+    height:400px;
+    background:lightgrey;
+}
+
+
+.dropzone{
+        max-width:650px; /*THIS HELPS ON LARGE MONITORS */
+}
+
+.osf-box{
+        border:0px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-style: inset;
+    border-width: 1px;
+    color:#C7FFC7;
+}
+
+#rightMetadata{
+        padding:20px;
+}
+
+#header {
+    padding:20px;
+    margin-left: 12px;
+}
+
+#Addheader {
+    padding:20px;
+    padding-top: 50px; /*PADDING-TOP MUST STAY BELOW PADDING OR IT WILL BE OVER WRITTEN */
+    margin-left: 12px;
 }
